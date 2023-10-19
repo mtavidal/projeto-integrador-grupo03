@@ -68,3 +68,4 @@ npm start
 - [Ricardo Bizerra de Lima Filho](https://github.com)
 - [Victor Henrique Anastácio Pellegrini](https://github.com)
 - [Victor Manoel da Silva](https://github.com)
+- [Alan Gabriel Pretes](https://github.com)
