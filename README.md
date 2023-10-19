@@ -2,7 +2,7 @@
 
 ---
 
-## <img src="./public/favicon.ico" /> Empresta.aí
+## <img src="./public/assets/images/favicon.ico" width="40" /> Empresta.aí
 
 O objetivo do presente trabalho foi realizar uma proposta, um protótipo
 funcional e um mínimo produto viável de aplicação web, voltada para a gestão de empréstimo de objetos entre grupos de pessoas, o Empresta.aí.
@@ -31,7 +31,7 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
 ---
 
-## 📁 Executar o projeto
+## 📁 Executar o projeto (atualizar)
 
 1.  Renomeie o arquivo na raiz do projeto `.env.example` para `.env`;
 2.  Preenchas as informações do arquivo `.env` com a URL desejada;
@@ -47,7 +47,7 @@ npm install
 npm start
 ```
 
-## 💻 Tecnologias utilizadas
+## 💻 Tecnologias utilizadas (atualizar)
 
 - HTML
 - CSS
