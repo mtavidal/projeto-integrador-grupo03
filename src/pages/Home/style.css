@@ -1,15 +1,138 @@
+/* cabecalho */
 header {
   background-color: #22668d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
 }
 
-main {
-  background-color: #fffadd;
+nav {
+  width: 90%;
 }
 
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#menu div {
+  display: flex;
+  padding: 0 5%;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.menuitem {
+  padding: 1% 5%;
+  text-align: center;
+}
+
+.menuitem a {
+  text-decoration: none;
+  color: #fffadd;
+  font-size: 18px;
+}
+
+.menuitem a:hover {
+  text-decoration: underline;
+  color: #ffcc70;
+}
+
+@media only screen and (max-width: 940px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 5%;
+  }
+  #menu,
+  #menu div {
+    justify-content: center;
+  }
+}
+
+/* fim cabecalho */
+main h2 {
+  font-size: 60px;
+  color: #22668d;
+  padding-bottom: 3%;
+}
+.info {
+  display: flex;
+  align-items: center;
+  color: #22668d;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.info div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.info p {
+  font-size: 20px;
+  line-height: 38px;
+  padding: 5px 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+button {
+  background-color: #22668d;
+  color: #fffadd;
+  border: none;
+  padding: 15px;
+  width: 350px;
+  font-size: 18px;
+  margin-top: 20px;
+  align-self: center;
+}
+button:hover {
+  background-color: #025280;
+  color: #ffcc70;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 940px) {
+  main h2 {
+    font-size: 45px;
+  }
+  .info div {
+    width: 100%;
+  }
+  .info img {
+    width: 350px;
+    padding-bottom: 20px;
+  }
+}
+
+/* rodape */
 footer {
   background-color: #22668d;
+  display: flex;
+  padding: 20px 15%;
+  justify-content: space-between;
 }
-
+#container-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  align-items: end;
+}
+#contato-redes {
+  display: flex;
+}
+#contato-redes div {
+  width: 300px;
+}
+.contato {
+  display: flex;
+}
 .icones {
   width: 30px;
 }

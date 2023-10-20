@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'ABeeZee', sans-serif;
+}
+main {
+  background-color: #fffadd;
+  padding: 3% 15%;
+}
+
+@media only screen and (max-width: 940px) {
+  main {
+    padding: 3% 5%;
+  }
 }

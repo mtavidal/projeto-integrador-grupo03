@@ -12,44 +12,46 @@
 
 <body>
     <header>
-        <div id="cabecalho">
-
+        <div>
             <img src="/public/assets/images/logo_texto.png" width="200" alt="Logo textual da empresa">
-
         </div>
         <nav role="navigation" aria-level="main navigation">
             <ul role="menu" id="menu">
-                <a href="/" role="menuitem">
-                    <li>Home</li>
-                </a>
-                <a href="/cadastro" role="menuitem">
-                    <li>Quero me cadastrar</li>
-                </a>
-                <a href="#tituloContato" role="menuitem">
-                    <li>Login</li>
-                </a>
+                <div>
+                    <li class="menuitem"><a href="/src/pages/Home" role="menuitem">
+                            Home
+                        </a></li>
+                    <li class="menuitem"><a href="/src/pages/cadastro" role="menuitem">
+                            Quero me cadastrar
+                        </a></li>
+                </div>
+                <li class="menuitem"><a href="/src/pages/login" role="menuitem">
+                        Login
+                    </a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
-        <section>
+        <h2>Nunca foi tão fácil emprestar e pegar emprestado </h2>
+        <section class="info">
             <div>
-                <h2>Nunca foi tão fácil emprestar e pegar emprestado </h2>
                 <p>Simples como pegar algo emprestado à um amigo.
                     Você cria um grupo com um objeto que não está usando com frequência, adiciona seus amigos e pronto,
-                    todos podem compartilhar o objeto.</br> Precisou de algo? É só buscar no feed de grupos. Com
+                    todos podem compartilhar o objeto.</p>
+                <p> Precisou de algo? É só buscar no feed de grupos. Com
                     certeza, alguém tem o que você precisa.</p>
             </div>
-            <img src="/public/assets/images/logo_emprestaAi.png" width="300" alt="Logo da Dentista">
+            <img src="/public/assets/images/logo_emprestaAi.png" width="30%" alt="Logo">
         </section>
-        <section>
-            <img src="/public/assets/images/itens.png" width="500" alt="Logo da Dentista">
+        <section class="info">
+            <img src="/public/assets/images/itens.png" width="30%" alt="Logo da Dentista">
             <div>
                 <p>Nossa plataforma aproxima quem quer emprestar de quem quer pegar emprestado, e vocês decidem quando,
                     onde, como e
-                    por quanto tempo será o empréstimo. </br>Precisou, procurou, pegou emprestado e devolveu. Simples
+                    por quanto tempo será o empréstimo. </p>
+                <p>Precisou, procurou, pegou emprestado e devolveu. Simples
                     assim. </p>
-                <button>Quero fazer parte</button>
+                <button onclick="location.href = '/src/pages/cadastro';">Quero fazer parte</button>
             </div>
         </section>
 
@@ -57,15 +59,15 @@
     <footer>
 
         <img src="/public/assets/images/logo_emprestaAi.png" width="300" alt="Logo da Dentista">
-        <div>
+        <div id="container-redes">
             <div id="contato-redes">
                 <div>
                     <p><b>Contato</b></p>
-                    <div>
+                    <div class="contato">
                         <img class="icones" src="/public/assets/images/logo-whatsapp.png" alt="logo de whatsapp">
                         <p>+55(21)3333-4444</p>
                     </div>
-                    <div>
+                    <div class="contato">
                         <img class="icones" src="/public/assets/images/logo-email.png" alt="logo de email">
                         <p>empresta.ai@empresta.com</p>
                     </div>
@@ -95,7 +97,6 @@
             <p>Desenvolvido por <a href="https://github.com/mtavidal/projeto-integrador-grupo03" target="_blank"> Grupo
                     03 - Projeto Integrador</a></p>
         </div>
-
 
     </footer>
 </body>
