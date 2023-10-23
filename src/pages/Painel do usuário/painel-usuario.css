@@ -1,0 +1,143 @@
+/* cabecalho */
+header {
+  background-color: #22668d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+}
+
+nav {
+  width: 90%;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#menu div {
+  display: flex;
+  padding: 0 5%;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.menuitem {
+  padding: 1% 5%;
+  text-align: center;
+}
+
+.menuitem a {
+  text-decoration: none;
+  color: #fffadd;
+  font-size: 18px;
+}
+
+.menuitem a:hover {
+  text-decoration: underline;
+  color: #ffcc70;
+}
+
+@media only screen and (max-width: 940px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 5%;
+  }
+  #menu,
+  #menu div {
+    justify-content: center;
+  }
+}
+
+/* fim cabecalho */
+
+/* aqui vai o css da página painel usuario */
+
+/* rodape */
+footer {
+  background-color: #22668d;
+  display: flex;
+  padding: 20px 15%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#container-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#contato-redes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#contato-redes div,
+#contato-redes ul {
+  width: 270px;
+  text-align: center;
+}
+#contato-redes h3 {
+  color: #ffcc70;
+}
+#contato-redes p,
+a {
+  color: #e7dfb0;
+  padding-left: 5px;
+  padding-top: 15px;
+}
+#contato-redes a {
+  text-decoration: none;
+}
+#contato-redes a:hover {
+  color: #9a9475;
+}
+#contato-redes li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contato {
+  display: flex;
+  text-align: center;
+}
+.icones {
+  padding-top: 15px;
+  width: 20px;
+}
+#devs {
+  color: #e7dfb0;
+  text-align: center;
+}
+#devs a {
+  color: #ffcc70;
+}
+#devs a:hover {
+  color: #9a9475;
+}
+@media only screen and (max-width: 1091px) {
+  footer {
+    justify-content: center;
+  }
+  #contato-redes div,
+  #contato-redes ul {
+    width: 100%;
+    text-align: center;
+  }
+  .listaRedes h3 {
+    padding-top: 15px;
+  }
+  .contato {
+    justify-content: center;
+  }
+
+  #devs {
+    padding-top: 30px;
+  }
+}
