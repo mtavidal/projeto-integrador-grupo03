@@ -22,18 +22,61 @@
                     <li class="menuitem"><a href="/src/pages/Home" role="menuitem">
                             Home
                         </a></li>
-                    <li class="menuitem"><a href="/src/pages/Cadastro/cadastro.html" role="menuitem">
-                            Quero me cadastrar
+                    <li class="menuitem"><a href="/src/pages/PainelDoUsuário/painel-usuario.html" role="menuitem">
+                            Painel do Usuário
                         </a></li>
                 </div>
                 <li class="menuitem"><a href="/src/pages/Login/login.html" role="menuitem">
-                        Login
+                        Sair
                     </a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
-        aqui vai o conteudo da pagina painel usuario
+        <a id="linkReferencia" href="/src/pages/PainelDoUsuário/painel-usuario.html" role="menuitem">
+            Painel do Usuário
+        </a>
+        <div>
+            <div id="containerBtn">
+                <button class="btnAzulClaro" onclick="location.href = '/src/pages/Amigos/amigos.html';">Ver
+                    Amigos</button>
+                <button class="btnAzulClaro"
+                    onclick="location.href = '/src/pages/GerenciarGrupos/gerenciar-grupos.html';"> Gerenciar
+                    Grupos</button>
+            </div>
+            <div id="containerBuscaProduto">
+                <input type="text" id="buscaProduto" required placeholder="Digite o produto que está precisando">
+                <button type="submit" class="btnAzulClaroBusca">Buscar</button>
+            </div>
+
+        </div>
+        <div id="containerGrupos">
+            <div class="cardGrupos" onclick="location.href = '/src/pages/DetalheDoGrupo/detalhes.html';">
+                <h3>Grupo</h3>
+                <img src="../../../public/assets/images/foto_produto.png" alt="imagem do produto">
+                <h4>Produto</h4>
+                <h5>Status</h5>
+            </div>
+            <div class="cardGrupos" onclick="location.href = '/src/pages/DetalheDoGrupo/detalhes.html';">
+                <h3>Grupo</h3>
+                <img src="../../../public/assets/images/foto_produto.png" alt="imagem do produto">
+                <h4>Produto</h4>
+                <h5>Status</h5>
+            </div>
+            <div class="cardGrupos" onclick="location.href = '/src/pages/DetalheDoGrupo/detalhes.html';">
+                <h3>Grupo</h3>
+                <img src="../../../public/assets/images/foto_produto.png" alt="imagem do produto">
+                <h4>Produto</h4>
+                <h5>Status</h5>
+            </div>
+            <div class="cardGrupos" onclick="location.href = '/src/pages/DetalheDoGrupo/detalhes.html';">
+                <h3>Grupo</h3>
+                <img src="../../../public/assets/images/foto_produto.png" alt="imagem do produto">
+                <h4>Produto</h4>
+                <h5>Status</h5>
+            </div>
+        </div>
+
     </main>
     <footer>
 
