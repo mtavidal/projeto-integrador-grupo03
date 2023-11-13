@@ -56,8 +56,87 @@ nav {
 }
 
 /* fim cabecalho */
+#linkReferencia,
+#containerLinksReferencia {
+  align-self: end;
+  color: #22668d;
+}
+#linkReferencia:hover {
+  color: #0f2b3b;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-/* aqui vai o css da página amigos */
+#containerBuscaAmigo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btnAzulClaroAmigo {
+  border: none;
+  background-color: #8ecddd;
+  padding: 10px;
+  color: #fffadd;
+  font-size: 18px;
+  width: 90px;
+}
+
+.btnAzulClaroAmigo:hover {
+  background-color: #22668d;
+  cursor: pointer;
+}
+#buscaAmigo {
+  width: 320px;
+  height: 42px;
+  background-color: #fffadd;
+  border: solid 2px #8ecddd;
+  padding: 10px;
+  margin-left: 20px;
+}
+#containerAmigos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  width: 100%;
+}
+.cardAmigos {
+  border: 3px solid #8ecddd;
+  background-color: #22668d;
+  color: #8ecddd;
+  display: flex;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardAmigos img {
+  width: 150px;
+}
+.cardAmigos h3 {
+  padding-bottom: 10px;
+}
+.cardAmigos h4 {
+  text-align: center;
+}
+
+.btnDesfazerAmizade {
+  color: #ffcc70;
+  border: 2px solid #ffcc70;
+  background-color: #22668d;
+  padding: 10px;
+}
+.btnDesfazerAmizade:hover {
+  background-color: #1d4751;
+}
 
 /* rodape */
 footer {
@@ -120,6 +199,23 @@ a {
 }
 #devs a:hover {
   color: #9a9475;
+}
+@media only screen and (max-width: 750px) {
+  .cardAmigos {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #containerBuscaAmigo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #buscaAmigo {
+    width: 300px;
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 1091px) {
   footer {
