@@ -47,6 +47,10 @@ npm install
 npm start
 ```
 
+## 🔚Link para o BackEnd do projeto
+
+- [Repositório](https://github.com/victormanoel-pti/empresta-ai-api/)
+
 ## 💻 Tecnologias utilizadas (atualizar)
 
 - HTML
