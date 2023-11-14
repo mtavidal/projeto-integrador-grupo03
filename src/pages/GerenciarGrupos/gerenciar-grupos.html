@@ -22,18 +22,91 @@
                     <li class="menuitem"><a href="/src/pages/Home" role="menuitem">
                             Home
                         </a></li>
-                    <li class="menuitem"><a href="/src/pages/Cadastro/cadastro.html" role="menuitem">
-                            Quero me cadastrar
+                    <li class="menuitem"><a href="/src/pages/PainelDoUsuário/painel-usuario.html" role="menuitem">
+                            Painel do Usuário
                         </a></li>
                 </div>
                 <li class="menuitem"><a href="/src/pages/Login/login.html" role="menuitem">
-                        Login
+                        Sair
                     </a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
-        aqui vai o conteudo da pagina gerenciar grupos
+        <div id="containerLinksReferencia">
+            <a id="linkReferencia" style="text-decoration: none;" href="/src/pages/PainelDoUsuário/painel-usuario.html">
+                Painel do Usuário
+            </a>><a id="linkReferencia" href="/src/pages/GerenciarGrupos/gerenciar-grupos.html">
+                Gerenciar Grupo
+            </a>
+        </div>
+
+        <div id="containerCriarGrupo">
+            <h2>Criar Grupo</h2>
+            <form id="formCriarGrupo">
+                <div>
+                    <input type="text" id="nomeGrupo" required placeholder="Digite o nome do grupo">
+                    <input type="text" id="emailsConvidados" required
+                        placeholder="Digite os emails dos convidados (separados por vírgula)">
+                </div>
+                <div>
+                    <input type="text" id="nomeProduto" required placeholder="Digite o nome do produto">
+                    <input type="file" id="imagemProduto" required placeholder="Inserir imagem do produto">
+                </div>
+                <textarea type="text" id="descriçãoProduto" required
+                    placeholder="Inserir a descrição do produto"></textarea>
+                <button type="submit" class="btnAzulClaro">Criar</button>
+            </form>
+
+        </div>
+        <div id="containerMeusGrupos">
+            <h2>Meus Grupos</h2>
+            <div id="containerCardsMeusGrupos">
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+                <div class="cardMeusGrupos">
+                    <h3>Nome do Grupo</h3>
+                    <div>
+                        <a id="linkEditar" href="#">Editar</a>
+                        <a id="linkExcluir" href="#">Excluir</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
 

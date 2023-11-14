@@ -56,7 +56,154 @@ nav {
 }
 
 /* fim cabecalho */
+#linkReferencia,
+#containerLinksReferencia {
+  align-self: end;
+  color: #22668d;
+}
+#linkReferencia:hover {
+  color: #0f2b3b;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#containerCriarGrupo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color: #757575;
+}
+#containerCriarGrupo h2 {
+  margin-top: 10px;
+  color: #22668d;
+}
+#formCriarGrupo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  border: 2px solid#22668d;
+  padding: 15px;
+}
+#formCriarGrupo div {
+  display: flex;
+}
+#nomeGrupo,
+#emailsConvidados,
+#nomeProduto {
+  width: 49%;
+  margin: 3px;
+  padding: 5px;
+  background-color: #fffadd;
+  border: solid 2px #8ecddd;
+}
+#formCriarGrupo textarea {
+  width: 98.7%;
+  margin: 3px;
+  padding: 5px;
+  background-color: #fffadd;
+  border: solid 2px #8ecddd;
+}
+
+#imagemProduto {
+  width: 49%;
+  margin: 3px;
+  background-color: #fffadd;
+  border: solid 2px #8ecddd;
+}
+
+input[type='file']::-webkit-file-upload-button {
+  border: none;
+  margin: 0px;
+  padding: 4px 10px;
+  background-color: #8ecddd;
+  color: #fffadd;
+  font-size: 18px;
+  font-size: 15px;
+}
+input[type='file']::-webkit-file-upload-button:hover {
+  background-color: #22668d;
+  cursor: pointer;
+}
+.btnAzulClaro {
+  border: none;
+  background-color: #8ecddd;
+  padding: 10px;
+  color: #fffadd;
+  font-size: 18px;
+  width: 200px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.btnAzulClaro:hover {
+  background-color: #22668d;
+  cursor: pointer;
+}
+
+#containerMeusGrupos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+  color: #22668d;
+}
+#containerCardsMeusGrupos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cardMeusGrupos {
+  border: 3px solid #8ecddd;
+  background-color: #22668d;
+  color: #8ecddd;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cardMeusGrupos div {
+  display: flex;
+  gap: 50px;
+}
+#linkEditar {
+  color: #8ecddd;
+  padding: 10px;
+}
+#linkExcluir {
+  color: #ffcc70;
+  padding: 10px;
+}
+.cardMeusGrupos h3 {
+  padding: 10px;
+}
+.cardMeusGrupos h4 {
+  text-align: center;
+}
+@media only screen and (max-width: 915px) {
+  #formCriarGrupo div {
+    flex-direction: column;
+  }
+  #nomeGrupo,
+  #emailsConvidados,
+  #nomeProduto {
+    width: 99%;
+  }
+
+  #imagemProduto {
+    width: 99%;
+  }
+}
 /* aqui vai o css da página gerenciar grupos */
 
 /* rodape */
