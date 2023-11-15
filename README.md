@@ -17,6 +17,14 @@ Usamos a Vercel para hospedar a aplicação.
 
 ---
 
+## 📄 Documento Primeira Entrega
+
+Pdf com o conteúdo da primeira entrega do projeto integrador.
+
+->[PDF](./public/documents/PI_ADS_Primeira%20_entrega_grupo03.pdf)
+
+---
+
 ## 🎨 Design do projeto
 
 Usamos o Figma para realizar um esboço das interfaces do projeto.
