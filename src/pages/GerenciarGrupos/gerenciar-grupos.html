@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="gerenciar-grupos.css">
+    <link rel="stylesheet" href="../../components/Modal/estiloModal.css">
     <link rel="icon" href="/public/assets/images/favicon.ico" />
     <title>Empresta.aí</title>
 </head>
@@ -43,7 +44,7 @@
 
         <div id="containerCriarGrupo">
             <h2>Criar Grupo</h2>
-            <form id="formCriarGrupo">
+            <form id="formCriarGrupo" action="#">
                 <div>
                     <input type="text" id="nomeGrupo" required placeholder="Digite o nome do grupo">
                     <input type="text" id="emailsConvidados" required
@@ -55,7 +56,8 @@
                 </div>
                 <textarea type="text" id="descriçãoProduto" required
                     placeholder="Inserir a descrição do produto"></textarea>
-                <button type="submit" class="btnAzulClaro">Criar</button>
+                <button type="submit" class="btnAzulClaro"
+                    onclick="verificaCamposPreenchidos(event,'dv-modal')">Criar</button>
             </form>
 
         </div>
@@ -65,43 +67,43 @@
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
                 <div class="cardMeusGrupos">
                     <h3>Nome do Grupo</h3>
                     <div>
-                        <a id="linkEditar" href="#">Editar</a>
-                        <a id="linkExcluir" href="#">Excluir</a>
+                        <a id="linkEditar" href="#" onclick="{openModal('dv-modal4')}">Editar</a>
+                        <a id="linkExcluir" href="#" onclick="{openModal('dv-modal2')}">Excluir</a>
                     </div>
                 </div>
             </div>
@@ -152,6 +154,87 @@
         </div>
 
     </footer>
+    <!-- /modal -->
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Grupo criado com sucesso!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" onclick="{closeModal('dv-modal')}">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir esse grupo?</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" onclick="{openModal('dv-modal3')}">Sim</button>
+                <button class="btn" onclick="{closeModal('dv-modal2')}">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Grupo Excluído com Sucesso!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn"
+                    onclick="{closeModal('dv-modal2'); location.href = '/src/pages/GerenciarGrupos/gerenciar-grupos.html';}">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div id="dv-modal4" class="modal">
+        <div class="modal-content">
+            <div class=" modal-body">
+                <div id="containerCriarGrupo">
+                    <h2 style="padding-bottom: 10px;">Editar Grupo</h2>
+                    <form action="#">
+                        <div>
+                            <input type="text" id="nomeAtualizadoGrupo" required
+                                placeholder="Digite o nome atualizado do grupo">
+                            <input type="text" id="emailsAtualizadoConvidados" required
+                                placeholder="Digite os emails dos novos convidados">
+                        </div>
+                        <div>
+                            <input type="text" id="nomeAtualizadoProduto" required
+                                placeholder="Digite o nome atualizado do produto">
+                            <input type="file" id="imagemAtualizadoProduto" required
+                                placeholder="Inserir nova imagem do produto">
+                        </div>
+                        <textarea type="text" id="descriçãoAtualizadoProduto" required
+                            placeholder="Inserir a descrição atualizada do produto"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="{openModal('dv-modal5')}">Editar</button>
+                <button class="btn" onclick="{closeModal('dv-modal4')}">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div id="dv-modal5" class="modal">
+        <div class="modal-content" style="height: 360px; padding-top: 115px;">
+            <div class=" modal-body">
+                <p>Grupo Editado com Sucesso!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn"
+                    onclick="{closeModal('dv-modal5'); location.href = '/src/pages/GerenciarGrupos/gerenciar-grupos.html';}">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../components/Modal/scriptModal.js"></script>
+    <!-- fim modal -->
 </body>
 
 </html>

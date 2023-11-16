@@ -136,6 +136,7 @@ main {
 }
 .btnDesfazerAmizade:hover {
   background-color: #1d4751;
+  cursor: pointer;
 }
 
 /* rodape */

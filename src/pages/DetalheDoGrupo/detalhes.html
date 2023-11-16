@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="../../components/Modal/estiloModal.css">
     <link rel="icon" href="/public/assets/images/favicon.ico" />
     <title>Empresta.aí</title>
 </head>
@@ -50,7 +51,8 @@
                     <h3 id="descricaoProduto">Descrição do produto</h3>
                     <h3>Status: Emprestado</h3>
                     <h3>Produto com: Nome da Pessoa</h3>
-                    <button type="button" class="btnAzulClaro">Deixar de Participar</button>
+                    <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
+                        Participar</button>
                 </div>
                 <img src="../../../public/assets/images/foto_produto.png" alt="">
             </div>
@@ -126,6 +128,20 @@
         </div>
 
     </footer>
+    <!-- /modal -->
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Você deixou de participar desse grupo.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" onclick="{closeModal('dv-modal')}">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <script src="../../components/Modal/scriptModal.js"></script>
+    <!-- fim modal -->
 </body>
 
 </html>

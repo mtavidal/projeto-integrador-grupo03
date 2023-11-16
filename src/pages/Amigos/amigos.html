@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="amigos.css">
+    <link rel="stylesheet" href="../../components/Modal/estiloModal.css">
     <link rel="icon" href="/public/assets/images/favicon.ico" />
     <title>Empresta.aí</title>
 </head>
@@ -56,7 +57,7 @@
                     <h3>Nome Amigo</h3>
                     <h4>Email amigo</h4>
                 </div>
-                <button class="btnDesfazerAmizade">Desfazer Amizade</button>
+                <button class="btnDesfazerAmizade" onclick="openModal('dv-modal')">Desfazer Amizade</button>
             </div>
             <div class="cardAmigos">
                 <img src="../../../public/assets/images/foto_amigo.png" alt="imagem do produto">
@@ -64,7 +65,7 @@
                     <h3>Nome Amigo</h3>
                     <h4>Email amigo</h4>
                 </div>
-                <button class="btnDesfazerAmizade">Desfazer Amizade</button>
+                <button class="btnDesfazerAmizade" onclick="openModal('dv-modal')">Desfazer Amizade</button>
             </div>
             <div class="cardAmigos">
                 <img src="../../../public/assets/images/foto_amigo.png" alt="imagem do produto">
@@ -72,7 +73,8 @@
                     <h3>Nome Amigo</h3>
                     <h4>Email amigo</h4>
                 </div>
-                <button class="btnDesfazerAmizade">Desfazer Amizade</button>
+                <button class="btnDesfazerAmizade" onclick="openModal('dv-modal')">Desfazer
+                    Amizade</button>
             </div>
 
         </div>
@@ -121,6 +123,35 @@
         </div>
 
     </footer>
+    <!-- /modal -->
+    <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir esse amigo?</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn" onclick="{openModal('dv-modal2')}">Sim</button>
+                <button class="btn" onclick="{closeModal('dv-modal')}">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv-modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Amigo Excluído com Sucesso!</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn"
+                    onclick="{closeModal('dv-modal2'); location.href = '/src/pages/Amigos/amigos.html';}">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../components/Modal/scriptModal.js"></script>
+    <!-- fim modal -->
 </body>
 
 </html>
