@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/global.css">
-    <link rel="stylesheet" href="gerenciar-grupos.css">
-    <link rel="stylesheet" href="../../components/Modal/estiloModal.css">
-    <link rel="icon" href="/public/assets/images/favicon.ico" />
-    <title>Empresta.aí</title>
-</head>
-
-<body>
-    <header>
-        <div>
-            <a href="/src/pages/Home"><img src="/public/assets/images/logo_texto.png" width="200"
-                    alt="Logo textual da empresa"></a>
-        </div>
-        <nav role="navigation" aria-level="main navigation">
-            <ul role="menu" id="menu">
-                <div>
-                    <li class="menuitem"><a href="/src/pages/Home" role="menuitem">
-                            Home
-                        </a></li>
-                    <li class="menuitem"><a href="/src/pages/PainelDoUsuário/painel-usuario.html" role="menuitem">
-                            Painel do Usuário
-                        </a></li>
-                </div>
-                <li class="menuitem"><a href="/src/pages/Login/login.html" role="menuitem">
-                        Sair
-                    </a></li>
-            </ul>
-        </nav>
-    </header>
     <main role="main">
         <div id="containerLinksReferencia">
-            <a id="linkReferencia" style="text-decoration: none;" href="/src/pages/PainelDoUsuário/painel-usuario.html">
+            <a id="linkReferencia" style="text-decoration: none;" href="#" data-page="painel-usuario">
                 Painel do Usuário
-            </a>><a id="linkReferencia" href="/src/pages/GerenciarGrupos/gerenciar-grupos.html">
+            </a>><a id="linkReferencia" href="#" data-page="gerenciar-grupos">
                 Gerenciar Grupo
             </a>
         </div>
@@ -56,7 +21,7 @@
                 </div>
                 <textarea type="text" id="descriçãoProduto" required
                     placeholder="Inserir a descrição do produto"></textarea>
-                <button type="submit" class="btnAzulClaro"
+                    <button type="submit" class="btnAzulClaro"
                     onclick="verificaCamposPreenchidos(event,'dv-modal')">Criar</button>
             </form>
 
@@ -110,50 +75,6 @@
 
         </div>
     </main>
-    <footer>
-
-        <img src="/public/assets/images/logo_emprestaAi.png" width="300" alt="Logo da empresa">
-        <div id="container-redes">
-            <div id="contato-redes">
-                <div>
-                    <h3><b>Contato</b></h3>
-                    <div class="contato">
-                        <img class="icones" src="/public/assets/images/logo-whatsapp.png" alt="logo de whatsapp">
-                        <p>+55(21)3333-4444</p>
-                    </div>
-                    <div class="contato">
-                        <img class="icones" src="/public/assets/images/logo-email.png" alt="logo de email">
-                        <p>empresta.ai@empresta.com</p>
-                    </div>
-                </div>
-                <ul class="listaRedes">
-                    <h3><b>Redes Sociais</b></h3>
-                    <li>
-                        <img class="icones" src="/public/assets/images/logo-whatsapp.png " alt="logo do whatsapp">
-                        <a href="https://whatsapp.com" target="_blank">
-                            empresta.ai
-                        </a>
-                    </li>
-                    <li>
-                        <img class="icones" src="/public/assets/images/logo-facebook.png" alt="logo do facebook">
-                        <a href="https://facebook.com" target="_blank">
-                            empresta.ai
-                        </a>
-                    </li>
-                    <li>
-                        <img class="icones" src="/public/assets/images/logo-instagram.png" alt="logo do instagram">
-                        <a href="https://instagram.com" target="_blank">
-                            empresta.ai
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p id="devs">Desenvolvido por <a href="https://github.com/mtavidal/projeto-integrador-grupo03"
-                    target="_blank"> Grupo
-                    03 - Projeto Integrador 2303</a></p>
-        </div>
-
-    </footer>
     <!-- /modal -->
     <div id="dv-modal" class="modal">
         <div class="modal-content">
@@ -235,6 +156,4 @@
     </div>
     <script src="../../components/Modal/scriptModal.js"></script>
     <!-- fim modal -->
-</body>
-
-</html>
+  

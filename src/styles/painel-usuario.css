@@ -1,0 +1,83 @@
+#linkReferencia {
+  align-self: end;
+  color: #22668d;
+}
+#linkReferencia:hover {
+  color: #0f2b3b;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnAzulClaro {
+  border: none;
+  background-color: #8ecddd;
+  padding: 10px;
+  color: #fffadd;
+  font-size: 18px;
+  width: 280px;
+  margin: 20px;
+}
+
+#containerBuscaProduto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btnAzulClaroBusca {
+  border: none;
+  background-color: #8ecddd;
+  padding: 10px;
+  color: #fffadd;
+  font-size: 18px;
+  width: 90px;
+}
+
+.btnAzulClaroBusca:hover,
+.btnAzulClaro:hover {
+  background-color: #22668d;
+  cursor: pointer;
+}
+#buscaProduto {
+  width: 80%;
+  height: 42px;
+  background-color: #fffadd;
+  border: solid 2px #8ecddd;
+  padding: 10px;
+  margin-left: 20px;
+}
+#containerGrupos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+.cardGrupos {
+  border: 3px solid #8ecddd;
+  background-color: #22668d;
+  color: #8ecddd;
+  padding: 20px;
+  margin: 15px;
+}
+.cardGrupos:hover {
+  transition: transform 0.6s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.cardGrupos img {
+  width: 200px;
+}
+.cardGrupos h3 {
+  padding-bottom: 15px;
+}
+.cardGrupos h4 {
+  padding-top: 10px;
+  text-align: center;
+}
+.cardGrupos h5 {
+  padding-top: 10px;
+  color: #ffcc70;
+  text-align: end;
+}
