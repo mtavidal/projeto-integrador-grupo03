@@ -15,10 +15,10 @@ function cadastrar() {
     dataNascimento,
     email,
     senha,
-    amigos: {}
+    amigos: []
   };
 
-  console.log('cadastro',cadastroData);
+  console.log('cadastro', cadastroData);
 
   fetch('https://empresta-ai.onrender.com/cadastro', {
     method: 'POST',
@@ -27,12 +27,12 @@ function cadastrar() {
     },
     body: JSON.stringify(cadastroData),
   })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Cadastro realizado com sucesso!', data);
-    // Lógica adicional após o cadastro, se necessário
-  })
-  .catch(error => {
-    console.error('Erro ao cadastrar:', error);
-  });
+    .then(response => response.json())
+    .then(data => {
+      console.log('Cadastro realizado com sucesso!', data);
+      // Lógica adicional após o cadastro, se necessário
+    })
+    .catch(error => {
+      console.error('Erro ao cadastrar:', error);
+    });
 }

@@ -4,7 +4,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-#tituloCadastro {
+main h2 {
   color: #22668d;
   font-size: 30px;
 }
