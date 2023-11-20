@@ -12,7 +12,11 @@ function getIdDoUsuario(email) {
             localStorage.setItem('id', loggedUser.id)
         })
         .catch(error => {
-            console.error('Erro: ', error)
+            console.error('Erro: ', error);
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
+            updateHeaderMenu();
             navigateTo('login');
         });
 }
@@ -32,7 +36,11 @@ function getNomeDoUsuario(email) {
             localStorage.setItem('nomeUsuario', `${loggedUser.nome} ${loggedUser.sobrenome}`);
         })
         .catch(error => {
-            console.error('Erro: ', error)
+            console.error('Erro: ', error);
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
+            updateHeaderMenu();
             navigateTo('login');
         });
 }

@@ -39,7 +39,7 @@ function getMeusGrupos(page) {
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn" onclick="{deletarGrupo('${grupo.grupoId}')}">Sim</button>
+                    <button class="btn" onclick="{deletarGrupo('${grupo.grupoId}'), navegateTo(${page})}">Sim</button>
                     <button class="btn" onclick="{closeModal('dv-modal2')}">Cancelar</button>
                 </div>
             </div>
@@ -77,8 +77,12 @@ function getMeusGrupos(page) {
             });
         })
         .catch(error => {
-            console.error('Erro: ', error)
+            console.error('Erro: ', error);
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
             navigateTo('login');
+            updateHeaderMenu();
         });
 }
 
@@ -113,7 +117,11 @@ function getGruposDetalhes(grupoId) {
         })
         .catch(error => {
             console.error('Erro: ', error)
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
             navigateTo('login');
+            updateHeaderMenu();
         });
 
 }
@@ -151,7 +159,11 @@ function criarGrupo(modal) {
         })
         .catch(error => {
             console.error('Erro: ', error)
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
             navigateTo('login');
+            updateHeaderMenu();
         });
 }
 
@@ -172,7 +184,11 @@ function deletarGrupo(grupoId) {
 
         .catch(error => {
             console.error('Erro: ', error)
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
             navigateTo('login');
+            updateHeaderMenu();
         });
 
 }
@@ -211,6 +227,10 @@ function editarGrupo(grupoId) {
         })
         .catch(error => {
             console.error('Erro: ', error)
+            localStorage.removeItem('token');
+            localStorage.removeItem('untilDate');
+            localStorage.removeItem('nomeUsuario');
             navigateTo('login');
+            updateHeaderMenu();
         });
 }
