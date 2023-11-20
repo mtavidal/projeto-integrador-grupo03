@@ -14,7 +14,7 @@ function navigateTo(page, event) {
     event.preventDefault();
   }
 
-  history.pushState({ page }, null, `/${page}`);
+  history.pushState({ page }, null, `/#${page}`);
   loadContent(page);
 }
 
