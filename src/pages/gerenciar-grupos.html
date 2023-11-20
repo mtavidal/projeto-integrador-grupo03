@@ -9,7 +9,7 @@
 
         <div id="containerCriarGrupo">
             <h2>Criar Grupo</h2>
-            <form id="formCriarGrupo" action="#">
+            <form id="formCriarGrupo" action="javascript:void(0);">
                 <div>
                     <input type="text" id="nomeGrupo" required placeholder="Digite o nome do grupo">
                     <input type="text" id="emailsConvidados" required
@@ -22,7 +22,7 @@
                 <textarea type="text" id="descriçãoProduto" required
                     placeholder="Inserir a descrição do produto"></textarea>
                     <button type="submit" class="btnAzulClaro"
-                    onclick="verificaCamposPreenchidos(event,'dv-modal')">Criar</button>
+                    onclick="verificaCamposPreenchidos(event,'dv-modal'), criarGrupo()">Criar</button>
             </form>
 
         </div>

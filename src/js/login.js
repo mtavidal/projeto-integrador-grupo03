@@ -23,6 +23,7 @@ function realizarLogin() {
     console.log('Login realizado com sucesso!', data);
     localStorage.setItem('token', data.message);
     localStorage.setItem('untilDate', new Date().setMinutes(new Date().getMinutes() + 10));
+    getIdDoUsuario(email);
     navigateTo('painel-usuario');
   })
   .catch(error => {

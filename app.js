@@ -15,15 +15,21 @@ function navigateTo(page, event) {
   }
 
   if (page === 'login'
-      && (localStorage.getItem('token') !== null  || localStorage.getItem('token') != '')
-      && (localStorage.getItem('untilDate') !== null || localStorage.getItem('untilDate') != '')
+      && !(localStorage.getItem('token') !== null  && localStorage.getItem('token') == '')
+      && !(localStorage.getItem('untilDate') !== null && localStorage.getItem('untilDate') == '')
       && localStorage.getItem('untilDate') > new Date()
   ) {
     navigateTo('painel-usuario');
     return;
   }
+  
   history.pushState({ page }, null, `/#${page}`);
   loadContent(page);
+
+  setTimeout(() => {
+    if (page === 'painel-usuario' || page === 'gerenciar-grupos') getMeusGrupos(page);
+  }, 500);
+
 }
 
 window.onload = function () {
