@@ -4,7 +4,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-main h2 {
+#tituloCadastro {
   color: #22668d;
   font-size: 30px;
 }
@@ -51,4 +51,3 @@ button:hover {
     width: 100%;
   }
 }
-
