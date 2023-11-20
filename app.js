@@ -14,6 +14,14 @@ function navigateTo(page, event) {
     event.preventDefault();
   }
 
+  if (page === 'login'
+      && (localStorage.getItem('token') !== null  || localStorage.getItem('token') != '')
+      && (localStorage.getItem('untilDate') !== null || localStorage.getItem('untilDate') != '')
+      && localStorage.getItem('untilDate') > new Date()
+  ) {
+    navigateTo('painel-usuario');
+    return;
+  }
   history.pushState({ page }, null, `/#${page}`);
   loadContent(page);
 }
