@@ -17,7 +17,7 @@ function realizarLogin() {
   .then(response => response.json())
   .then(data => {
     console.log('Login realizado com sucesso!', data);
-    // redirecionar usuário
+    navigateTo('painel-usuario');
   })
   .catch(error => {
     console.error('Erro ao realizar login:', error);
