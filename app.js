@@ -25,6 +25,7 @@ function navigateTo(page, event) {
   
   history.pushState({ page }, null, `/#${page}`);
   loadContent(page);
+  updateHeaderMenu();
 
   setTimeout(() => {
     if (page === 'painel-usuario' || page === 'gerenciar-grupos') getMeusGrupos(page);

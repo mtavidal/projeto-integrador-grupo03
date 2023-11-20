@@ -9,7 +9,7 @@ function realizarLogin() {
 
   fetch('https://empresta-ai.onrender.com/login', {
     method: 'POST',
-    headers: {
+    headers: {  
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(loginData),
@@ -18,6 +18,7 @@ function realizarLogin() {
   .then(data => {
     if (data.success === false) {
       console.error('Erro ao realizar login:', data);
+      alert("Usuário ou senha inválidos.")
       return;
     }
     console.log('Login realizado com sucesso!', data);
@@ -30,3 +31,24 @@ function realizarLogin() {
     console.error('Erro ao realizar login:', error);
   });
 }
+
+function realizarLogout() {
+  fetch('https://empresta-ai.onrender.com/logout', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': localStorage.getItem('token')
+    },
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Logout realizado com sucesso!', data);
+    localStorage.removeItem('token');
+    localStorage.removeItem('untilDate');
+    navigateTo('home');
+  })
+  .catch(error => {
+    console.error('Erro ao realizar logout:', error);
+  });
+}
+
