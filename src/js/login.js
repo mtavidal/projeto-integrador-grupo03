@@ -9,27 +9,28 @@ function realizarLogin() {
 
   fetch('https://empresta-ai.onrender.com/login', {
     method: 'POST',
-    headers: {  
+    headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(loginData),
   })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success === false) {
-      console.error('Erro ao realizar login:', data);
-      alert("Usuário ou senha inválidos.")
-      return;
-    }
-    console.log('Login realizado com sucesso!', data);
-    localStorage.setItem('token', data.message);
-    localStorage.setItem('untilDate', new Date().setMinutes(new Date().getMinutes() + 10));
-    getIdDoUsuario(email);
-    navigateTo('painel-usuario');
-  })
-  .catch(error => {
-    console.error('Erro ao realizar login:', error);
-  });
+    .then(response => response.json())
+    .then(data => {
+      if (data.success === false) {
+        console.error('Erro ao realizar login:', data);
+        alert("Usuário ou senha inválidos.")
+        return;
+      }
+      console.log('Login realizado com sucesso!', data);
+      localStorage.setItem('token', data.message);
+      localStorage.setItem('untilDate', new Date().setMinutes(new Date().getMinutes() + 10));
+      getIdDoUsuario(email);
+      getNomeDoUsuario(email);
+      navigateTo('painel-usuario');
+    })
+    .catch(error => {
+      console.error('Erro ao realizar login:', error);
+    });
 }
 
 function realizarLogout() {
@@ -40,15 +41,16 @@ function realizarLogout() {
       'Authorization': localStorage.getItem('token')
     },
   })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Logout realizado com sucesso!', data);
-    localStorage.removeItem('token');
-    localStorage.removeItem('untilDate');
-    navigateTo('home');
-  })
-  .catch(error => {
-    console.error('Erro ao realizar logout:', error);
-  });
+    .then(response => response.json())
+    .then(data => {
+      console.log('Logout realizado com sucesso!', data);
+      localStorage.removeItem('token');
+      localStorage.removeItem('untilDate');
+      localStorage.removeItem('nomeUsuario');
+      navigateTo('home');
+    })
+    .catch(error => {
+      console.error('Erro ao realizar logout:', error);
+    });
 }
 

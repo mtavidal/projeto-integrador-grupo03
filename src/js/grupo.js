@@ -95,15 +95,16 @@ function getGruposDetalhes(grupoId) {
             if (data.message === "Grupo não encontrado.") {
                 return []
             }
+
             console.log('Sucesso em pegar o grupo!', data);
             const grupo = data.message;
-            const container = document.getElementById('containerDadosGrupo')
+            const container = document.getElementById('containerDadosGrupo');
             container.innerHTML += `
             <div>
                 <h3>${grupo.nomeGrupo}</h3>
                 <h3 id="descricaoProduto">${grupo.descricaoProduto}</h3>
                 <h3>Status: Emprestado</h3>
-                <h3>Produto com: ${getNomeDoUsuario(grupo.email)}</h3>
+                <h3>Produto com: ${localStorage.getItem('nomeUsuario')}</h3>
                 <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
                     Participar</button>
             </div>

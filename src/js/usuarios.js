@@ -6,15 +6,15 @@ function getIdDoUsuario(email) {
             'Authorization': localStorage.getItem('token')
         },
     })
-    .then(response => response.json())
-    .then(data => {
-        const loggedUser = data.find(user => user.email === email)
-        localStorage.setItem('id', loggedUser.id)
-    })
-    .catch(error => {
-        console.error('Erro: ', error)
-        navigateTo('login');
-    });
+        .then(response => response.json())
+        .then(data => {
+            const loggedUser = data.find(user => user.email === email)
+            localStorage.setItem('id', loggedUser.id)
+        })
+        .catch(error => {
+            console.error('Erro: ', error)
+            navigateTo('login');
+        });
 }
 
 function getNomeDoUsuario(email) {
@@ -25,13 +25,14 @@ function getNomeDoUsuario(email) {
             'Authorization': localStorage.getItem('token')
         },
     })
-    .then(response => response.json())
-    .then(data => {
-        const loggedUser = data.find(user => user.email === email)
-        return `${loggedUser.nome} ${loggedUser.sobrenome}`
-    })
-    .catch(error => {
-        console.error('Erro: ', error)
-        navigateTo('login');
-    });
+        .then(response => response.json())
+        .then(data => {
+            const loggedUser = data.find(user => user.email === email)
+            console.log(loggedUser);
+            localStorage.setItem('nomeUsuario', `${loggedUser.nome} ${loggedUser.sobrenome}`);
+        })
+        .catch(error => {
+            console.error('Erro: ', error)
+            navigateTo('login');
+        });
 }
