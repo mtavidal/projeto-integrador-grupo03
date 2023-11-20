@@ -1,11 +1,11 @@
 function realizarLogin() {
-  const form = document.getElementById('loginForm');
-  const formData = new FormData(form);
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
 
-  const loginData = {};
-  formData.forEach((value, key) => {
-    loginData[key] = value;
-  });
+  const loginData = {
+    email,
+    senha,
+  };
 
   fetch('https://empresta-ai.onrender.com/login', {
     method: 'POST',
