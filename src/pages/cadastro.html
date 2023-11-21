@@ -1,0 +1,38 @@
+<main role="main">
+    <h2>Cadastro</h2>
+    <form action="javascript:void(0);" method="post" id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required placeholder="Digite seu nome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" required placeholder="Digite seu sobrenome">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" required placeholder="Digite sua cidade">
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" required placeholder="Digite seu gênero">
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" required placeholder="Digite sua data de nascimento">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Digite seu email">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required placeholder="Digite sua senha">
+        <label for="confirmacaoSenha">Confirme sua senha:</label>
+        <input type="password" id="confirmacaoSenha" required placeholder="Confirme sua senha">
+        <button type="submit" onclick="{verificaCamposPreenchidos(event,'dv-modal'), cadastrar()}">Cadastrar</button>
+
+    </form>
+</main>
+<!-- /modal -->
+<div id="dv-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn" onclick="{closeModal('dv-modal'), navigateTo('login');}">Fechar</button>
+        </div>
+    </div>
+</div>
+
+<script src="../components/Modal/scriptModal.js"></script>
+<!-- fim modal -->

@@ -1,0 +1,67 @@
+<main role="main">
+    <div id="containerLinksReferencia">
+        <a id="linkReferencia" style="text-decoration: none;" href="#" data-page="painel-usuario">
+            Painel do Usuário>
+        </a>
+        <a id="linkReferencia" style="text-decoration: none;" href="#" data-page="detalhes">
+            Detalhe do Grupo>
+        </a>
+        <a id="linkReferencia" href="#" data-page="pegar-emprestado">
+            Pegar Emprestado
+        </a>
+    </div>
+
+    <div id="containerDetalheGrupo">
+
+
+        <div id="containerDadosGrupo">
+            <!-- <div> 
+                <h2>Nome do Grupo</h2>
+                <h3>Nome do Produto</h3>
+                <h3 id="descricaoProduto">Descrição do produto</h3>
+                <h3>Status: Disponível</h3>
+                <h3>Produto com: Disponível</h3>
+            </div>
+            <img src="../../public/assets/images/foto_produto.png" alt=""> -->
+        </div>
+    </div>
+    <div id="containerDatas">
+        <div>
+            <h2>Datas Indisponíveis</h2>
+            <ul>
+                <li>25/10/2023 até 30/10/2023</li>
+                <li>10/11/2023 até 20/11/2023</li>
+                <li>05/01/2024 até 15/01/2024</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Selecione o periodo desejado:</h2>
+            <div id="containerIncluirDatas">
+                <div>
+                    <label for="dataInicio">Início</label>
+                    <input type="date" id="dataInicio" required>
+                </div>
+                <div>
+                    <label for="dataFim">Devolução</label>
+                    <input type="date" id="dataFim" required>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Solicitar Empréstimo</button>
+    </div>
+</main>
+<!-- /modal -->
+<div id="dv-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>Sua solicitação de empréstimo foi realizada com sucesso!
+                Aguarde contato do dono do objeto.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn" onclick="{closeModal('dv-modal'), navigateTo('painel-usuario')}">Fechar</button>
+        </div>
+    </div>
+</div>
+<script src="../components/Modal/scriptModal.js"></script>
+<!-- fim modal -->

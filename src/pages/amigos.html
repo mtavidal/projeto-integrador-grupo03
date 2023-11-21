@@ -1,0 +1,46 @@
+<main role="main">
+    <div id="containerLinksReferencia">
+        <a id="linkReferencia" style="text-decoration: none;" href="#" data-page="painel-usuario">
+            Painel do Usuário
+        </a>><a id="linkReferencia" href="#" data-page="amigos">
+            Amigos
+        </a>
+    </div>
+
+    <div>
+
+        <div id="containerBuscaAmigo">
+            <input type="text" id="buscaAmigo" required placeholder="Digite o nome do amigo que deseja encontrar">
+            <button type="submit" class="btnAzulClaroAmigo">Buscar</button>
+        </div>
+
+    </div>
+    <div id="containerAmigos">
+        <!-- <div class="cardAmigos">
+                <img src="../../public/assets/images/foto_amigo.png" alt="imagem do produto">
+                <div>
+                    <h3>Nome Amigo</h3>
+                    <h4>Email amigo</h4>
+                </div>
+                <button class="btnDesfazerAmizade" onclick="openModal('dv-modal')">Desfazer Amizade</button>
+            </div> -->
+    </div>
+</main>
+<!-- /modal -->
+
+
+<div id="dv-confirmacaoExclusaoAmigo" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>Amigo Excluído com Sucesso!</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn"
+                onclick="{closeModal('dv-confirmacaoExclusaoAmigo'); navigateTo('amigos');}">Fechar</button>
+        </div>
+    </div>
+</div>
+
+<script src="../components/Modal/scriptModal.js"></script>
+<!-- fim modal -->
