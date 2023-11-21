@@ -3,18 +3,13 @@
   "name": "projeto-integrador-grupo03",
   "builds": [
     {
-      "src": "src/pages/*.html",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/([^/]+\\.html)",
-      "dest": "src/pages/$1",
-      "headers": { "cache-control": "public, max-age=0, must-revalidate" }
-    },
-    {
-      "src": "/.*",
+      "src": "./(.*)",
       "dest": "/index.html"
     }
   ]
