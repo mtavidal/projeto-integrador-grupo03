@@ -4,7 +4,7 @@
 
 ## <img src="./public/assets/images/favicon.ico" width="40" /> Empresta.aí
 
-O objetivo do presente trabalho foi realizar uma proposta, um protótipo
+O objetivo do presente trabalho foi realizar uma proposta (1ªEntrega), um protótipo
 funcional e um mínimo produto viável de aplicação web, voltada para a gestão de empréstimo de objetos entre grupos de pessoas, o Empresta.aí.
 
 ---
@@ -39,32 +39,27 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
 ---
 
-## 📁 Executar o projeto (atualizar)
+## 📁 Executar o projeto
 
-1.  Renomeie o arquivo na raiz do projeto `.env.example` para `.env`;
-2.  Preenchas as informações do arquivo `.env` com a URL desejada;
-3.  No terminal, use o comando abaixo para instalar as dependências:
-
-```
-npm install
-```
-
-4.  No terminal, use o comando abaixo para iniciar o projeto:
-
-```
-npm start
-```
+1.  Usando a extensão LiveServer no VSCode que permite criar um servidor local para desenvolvimento web, e clicar em GoLive.
 
 ## 🔚Link para o BackEnd do projeto
 
 - [Repositório](https://github.com/victormanoel-pti/empresta-ai-api/)
 
-## 💻 Tecnologias utilizadas (atualizar)
+## 💻 Tecnologias utilizadas
 
-- HTML
-- CSS
-  - Flex-box
-  - Media queries
+- FrontEnd
+  - HTML
+  - CSS
+    - Flex-box
+    - Media queries
+  - JavaScript
+- BackEnd
+  - Node JS;
+  - Express JS;
+  - JWT;
+  - Nodemon.
 
 ---
 
@@ -72,12 +67,10 @@ npm start
 
 ### Grupo 03
 
-#### Front:
-
 - [Manuela Torres Andion Vidal](https://github.com/mtavidal)
-- [Luís Otávio Mataveli](https://github.com)
-- [Rebeca Canesin](https://github.com)
-- [Ricardo Bizerra de Lima Filho](https://github.com)
-- [Victor Henrique Anastácio Pellegrini](https://github.com)
-- [Victor Manoel da Silva](https://github.com)
-- [Alan Gabriel Pretes](https://github.com)
+- [Luís Otávio Mataveli](https://github.com/luismataveli)
+- [Rebeca Canesin](https://github.com/rebecaCanesin)
+- [Ricardo Bizerra de Lima Filho](https://github.com/ricardobizerra)
+- [Victor Henrique Anastácio Pellegrini](https://github.com/VictorPellegrini)
+- [Victor Manoel da Silva](https://github.com/victormanoel-pti)
+- [Alan Gabriel Pretes](https://github.com/AlanPretes)

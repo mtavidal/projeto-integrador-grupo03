@@ -536,6 +536,7 @@ main {
 }
 #formCriarGrupo {
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   margin: 10px 0px;
   border: 2px solid#22668d;
