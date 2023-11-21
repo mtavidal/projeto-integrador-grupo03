@@ -109,7 +109,7 @@ function getGruposDetalhes(grupoId) {
                 <h3 id="descricaoProduto">${grupo.descricaoProduto}</h3>
                 <h3>Status: Emprestado</h3>
                 <h3>Produto com: ${localStorage.getItem('nomeUsuario')}</h3>
-                <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
+                <button type="button" class="btnAzulClaroDetalhes" onclick="{openModal('dv-modal')}">Deixar de
                     Participar</button>
             </div>
             <img src="../../public/assets/images/foto_produto.png" alt="">

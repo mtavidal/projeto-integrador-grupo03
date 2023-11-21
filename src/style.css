@@ -288,6 +288,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+  align-items: center;
 }
 
 .btnAzulClaroAmigo {
@@ -297,6 +298,7 @@ main {
   color: #fffadd;
   font-size: 18px;
   width: 90px;
+  margin: 0;
 }
 
 .btnAzulClaroAmigo:hover {
@@ -453,7 +455,7 @@ main {
   height: 200px;
 }
 
-.btnAzulClaro {
+.btnAzulClaroDetalhes {
   border: none;
   background-color: #8ecddd;
   padding: 10px;
@@ -464,7 +466,7 @@ main {
   margin-top: 10px;
 }
 
-.btnAzulClaro:hover {
+.btnAzulClaroDetalhes :hover {
   background-color: #22668d;
   cursor: pointer;
 }
@@ -538,6 +540,7 @@ main {
   margin: 10px 0px;
   border: 2px solid#22668d;
   padding: 15px;
+  width: 100%;
 }
 #formCriarGrupo div {
   display: flex;
@@ -587,7 +590,7 @@ input[type='file']::-webkit-file-upload-button:hover {
   font-size: 18px;
   width: 200px;
   align-self: center;
-  margin-top: 10px;
+  margin: 0;
 }
 
 .btnAzulClaro:hover {
@@ -683,6 +686,7 @@ main {
 #containerBuscaProduto {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btnAzulClaroBusca {
@@ -692,6 +696,7 @@ main {
   color: #fffadd;
   font-size: 18px;
   width: 90px;
+  margin: 0;
 }
 
 .btnAzulClaroBusca:hover,
