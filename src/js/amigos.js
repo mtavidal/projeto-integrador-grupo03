@@ -19,7 +19,7 @@ function getMeusAmigos() {
             amigos.forEach(amigo => {
                 container.innerHTML += `
             <div class="cardAmigos">
-            <img src="../../public/assets/images/foto_amigo.png" alt="imagem do produto">
+            <img src="./public/assets/images/foto_amigo.png" alt="imagem do produto">
             <div>
                 <h3>${amigo.nome}</h3>
                 <h4>${amigo.email}</h4>

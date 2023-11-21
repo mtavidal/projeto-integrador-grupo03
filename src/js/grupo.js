@@ -22,7 +22,7 @@ function getMeusGrupos(page) {
                 gruposContainer.innerHTML += page === 'painel-usuario' ? `
             <div class="cardGrupos" onclick="navigateTo('detalhes'), getGruposDetalhes('${grupo.grupoId}')">
             <h3>${grupo.nomeGrupo}</h3>
-            <img src="../../public/assets/images/foto_produto.png" alt="imagem do produto">
+            <img src="./public/assets/images/foto_produto.png" alt="imagem do produto">
             <h4>${grupo.nomeProduto}</h4>
             <h5>Status</h5>
             </div>
@@ -115,7 +115,7 @@ function getGruposDetalhes(grupoId) {
                 <button type="button" class="btnAzulClaroDetalhes" onclick="{deletarGrupo('${grupoId}')}">Deixar de
                     Participar</button>
             </div>
-            <img src="../../public/assets/images/foto_produto.png" alt="">
+            <img src="./public/assets/images/foto_produto.png" alt="">
             <div id="dv-modal3" class="modal">
             <div class="modal-content">
                 <div class="modal-body">
@@ -133,15 +133,15 @@ function getGruposDetalhes(grupoId) {
             <h2>Participantes</h2>
             <div id="containerCardsParticipantes">
                 <div class="cardParticipantes">
-                    <img src="../../public/assets/images/foto_participante.png" alt="Foto participante">
+                    <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
                     <h2 style="color:#8ecddd;">Nome</h2>
                 </div>
                 <div class="cardParticipantes">
-                    <img src="../../public/assets/images/foto_participante.png" alt="Foto participante">
+                    <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
                     <h2 style="color:#8ecddd;">Nome</h2>
                 </div>
                 <div class=" cardParticipantes">
-                    <img src="../../public/assets/images/foto_participante.png" alt="Foto participante">
+                    <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
                     <h2 style="color:#8ecddd;">Nome</h2>
                 </div>
             </div>
@@ -184,7 +184,7 @@ function getGrupoPegarEmprestado(grupoId) {
                 <h3>Status: Disponível</h3>
                 <h3>Produto com: Disponível</h3>
             </div>
-            <img src="../../public/assets/images/foto_produto.png" alt="">
+            <img src="./public/assets/images/foto_produto.png" alt="">
             <button class="btn" onclick="{closeModal('dv-modal3'), navigateTo('painel-usuario')}">Fechar</button>
         `;
         })

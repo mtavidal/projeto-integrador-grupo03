@@ -1,7 +1,7 @@
 function loadContent(page) {
   const appContainer = document.getElementById('app');
 
-  fetch(`src/pages/${page}.html`)
+  fetch(`./src/pages/${page}.html`)
     .then(response => response.text())
     .then(html => {
       appContainer.innerHTML = html;
