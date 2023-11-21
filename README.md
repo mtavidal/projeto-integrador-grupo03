@@ -9,14 +9,6 @@ funcional e um mínimo produto viável de aplicação web, voltada para a gestã
 
 ---
 
-## 🔗 Link para o site
-
-Usamos a Vercel para hospedar a aplicação.
-
-->[Acessar site Empresta.Aí](https://projeto-integrador-grupo03.vercel.app/)
-
----
-
 ## 📄 Documento Primeira Entrega
 
 Pdf com o conteúdo da primeira entrega do projeto integrador.

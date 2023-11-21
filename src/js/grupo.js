@@ -51,7 +51,7 @@ function getMeusGrupos(page) {
                 <div class=" modal-body">
                     <div id="containerCriarGrupo">
                         <h2 style="padding-bottom: 10px;">Editar Grupo</h2>
-                        <form action="#">
+                        <form style="width: 100%" action="#">
                             <div>
                                 <input type="text" id="nomeAtualizadoGrupo${grupo.grupoId}" required
                                     placeholder="Digite o nome atualizado do grupo">
