@@ -4,8 +4,16 @@
 
 ## <img src="./public/assets/images/favicon.ico" width="40" /> Empresta.aí
 
-O objetivo do presente trabalho foi realizar uma proposta (1ªEntrega), um protótipo
-funcional e um mínimo produto viável de aplicação web, voltada para a gestão de empréstimo de objetos entre grupos de pessoas, o Empresta.aí.
+O objetivo do presente trabalho foi realizar uma proposta (1ªEntrega) e um protótipo
+funcional (2ªEntrega) de uma aplicação web, voltada para a gestão de empréstimo de objetos entre grupos de pessoas, o Empresta.aí.
+
+---
+
+## 🔗 Link para o vídeo no YouTube
+
+Após revisitar o projeto apresentado na primeira etapa, definimos a jornada de "pegar um produto emprestado" para ser desenvolvida, como ilustrado no vídeo abaixo.
+
+->[Acessar vídeo Empresta.Aí](https://youtu.be/RFCeJtx27cg?si=joH2STA5gMSeb95g/)
 
 ---
 
@@ -13,7 +21,7 @@ funcional e um mínimo produto viável de aplicação web, voltada para a gestã
 
 Pdf com o conteúdo da primeira entrega do projeto integrador.
 
-->[PDF](./public/documents/PI_ADS_Primeira%20_entrega_grupo03.pdf)
+->[Acessar PDF](./public/documents/PI_ADS_Primeira%20_entrega_grupo03.pdf)
 
 ---
 
@@ -33,11 +41,12 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
 ## 📁 Executar o projeto
 
-1.  Usando a extensão LiveServer no VSCode que permite criar um servidor local para desenvolvimento web, e clicar em GoLive.
+1.  Usando a extensão LiveServer no VSCode que permite criar um servidor local para desenvolvimento web, clicar em GoLive.
 
-## 🔚Link para o BackEnd do projeto
+## 🔚 BackEnd do projeto
 
-- [Repositório](https://github.com/victormanoel-pti/empresta-ai-api/)
+- [Acessar Repositório no GitHub](https://github.com/victormanoel-pti/empresta-ai-api/)
+- [Acessar Collection do Postman](<./public/documents/Empresta-Ai.postman_collection_v2%20(1).json>)
 
 ## 💻 Tecnologias utilizadas
 

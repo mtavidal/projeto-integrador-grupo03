@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "5a67beea-b6af-40ff-949c-255cb4f9ae57",
+		"name": "Empresta-Ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/cadastro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Victor\",\n    \"sobrenome\": \"Manoel\",\n    \"cidade\": \"SP\",\n    \"genero\": \"M\",\n    \"dataNascimento\": \"\",\n    \"email\": \"victor@email.com\",\n    \"senha\": \"123\",\n    \"amigos\": [{\n        \"nome\": \"Amigo 1\",\n        \"email\": \"amigo1@email.com\"\n    }]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/cadastro",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"victor@email.com\",\n    \"senha\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/login",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grupos/criar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeGrupo\": \"Grupo Teste\",\n    \"emails\": [\n        {\n            \"0\": \"email@email.com\"\n        },\n        {\n            \"1\": \"email2@gmail.com\"\n        }\n    ],\n    \"nomeProduto\": \"Teste\",\n    \"descricaoProduto\": \"Teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/grupos/criar",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"grupos",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grupos/meus-grupos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/grupos/meus-grupos",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"grupos",
+						"meus-grupos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grupos/detalhes/{id}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/grupos/detalhes/59c29667-855c-43b1-9f50-db4621af7ec8",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"grupos",
+						"detalhes",
+						"59c29667-855c-43b1-9f50-db4621af7ec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grupos/remover/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/grupos/remover/59c29667-855c-43b1-9f50-db4621af7ec8",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"grupos",
+						"remover",
+						"59c29667-855c-43b1-9f50-db4621af7ec8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "amigos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk0YWVmMTdkLWM2M2UtNDcwYy1hYWU0LTk3N2ViYzU1ZTNjNyIsImlhdCI6MTcwMDQ5MDU4OCwiZXhwIjoxNzAwNDkxMTg4fQ.8kSjeKvXWmr-puYnni7NPq52wE7qQ866fyap0dYHAbE",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Victaaaao\",\n    \"email\": \"victao@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/amigos",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"amigos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/amigos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk0YWVmMTdkLWM2M2UtNDcwYy1hYWU0LTk3N2ViYzU1ZTNjNyIsImlhdCI6MTcwMDQ5MDU4OCwiZXhwIjoxNzAwNDkxMTg4fQ.8kSjeKvXWmr-puYnni7NPq52wE7qQ866fyap0dYHAbE",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/amigos",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"amigos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/amigos/excluir/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/amigos/excluir/12345",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"amigos",
+						"excluir",
+						"12345"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/usuarios",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc1ODYxNzMyLWQ2MmUtNGJjZC04OTMwLTY2OGFjOTRhMDUyOCIsImlhdCI6MTcwMDQ1MjUxMSwiZXhwIjoxNzAwNDUzMTExfQ.PqEv9efugINk5eb4qtHUVnrPzVRv2zizNJM263RHg1A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/usuarios",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/grupos/editar/{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MzBiOWE3LTRhZDMtNDU5NC1hMDQ5LTI4NmZmZDVmNWI0NSIsImlhdCI6MTcwMDQ4ODY0NSwiZXhwIjoxNzAwNDg5MjQ1fQ.bbMi6-1j4BYy8XswLlARPFiCJjRTCt1drVQr3OJ9JM4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomeGrupo\": \"Grupo Teste novo\",\n    \"emails\": [\n        {\n            \"0\": \"hmmmmm@email.com\"\n        },\n        {\n            \"1\": \"hmmmmmm2@gmail.com\"\n        }\n    ],\n    \"nomeProduto\": \"Teste\",\n    \"grupoId\": \"7ebce84d-b065-4876-b7f1-ae403e8cb10b\",\n    \"descricaoProduto\": \"Teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://empresta-ai.onrender.com/grupos/editar/7ebce84d-b065-4876-b7f1-ae403e8cb10",
+					"protocol": "https",
+					"host": [
+						"empresta-ai",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"grupos",
+						"editar",
+						"7ebce84d-b065-4876-b7f1-ae403e8cb10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
