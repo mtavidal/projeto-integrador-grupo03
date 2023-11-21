@@ -1,20 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/pages/*.html",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
-      "src": "/([^/]+\\.html)",
-      "dest": "src/pages/$1",
-      "headers": { "cache-control": "public, max-age=0, must-revalidate" }
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
+      "src": "/(.*)",
+      "dest": "index.html"
     }
   ]
 }
