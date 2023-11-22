@@ -41,12 +41,28 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
 ## 📁 Executar o projeto
 
-1.  Usando a extensão LiveServer no VSCode que permite criar um servidor local para desenvolvimento web, clicar em GoLive.
+1.  Usando a extensão LiveServer no Visual Studio Code, que permite criar um servidor local para desenvolvimento web.
+
+    - Para instalar a extensão:
+
+      - Abra o VS Code e vá até a aba de extensões.
+      - Pesquise por "Live Server" na barra de busca.
+      - Clique em "Instalar" na extensão com o nome "Live Server".
+
+    - Para executar o código:
+      - Abra o arquivo HTML `index.html`.
+      - Clique com o botão direito do mouse dentro do arquivo e selecione a opção "Open with Live Server" (Abrir com Live Server) ou clique em Go Live.
+      - O VS Code abrirá automaticamente o código no navegador, permitindo a visualização do resultado em tempo real.
+
+---
 
 ## 🔚 BackEnd do projeto
 
 - [Acessar Repositório no GitHub](https://github.com/victormanoel-pti/empresta-ai-api/)
 - [Acessar Collection do Postman](<./public/documents/Empresta-Ai.postman_collection_v2%20(1).json>)
+- As rotas podem ser chamadas através de https://empresta-ai.onrender.com.
+
+---
 
 ## 💻 Tecnologias utilizadas
 
@@ -57,10 +73,10 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
     - Media queries
   - JavaScript
 - BackEnd
-  - Node JS;
-  - Express JS;
-  - JWT;
-  - Nodemon.
+  - Node JS
+  - Express JS
+  - JWT
+  - Nodemon
 
 ---
 
