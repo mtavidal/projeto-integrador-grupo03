@@ -8,7 +8,7 @@ function getIdDoUsuario(email) {
     })
         .then(response => response.json())
         .then(data => {
-            const loggedUser = data.find(user => user.email === email)
+            const loggedUser = data.data.find(user => user.email === email)
             localStorage.setItem('id', loggedUser.id)
         })
         .catch(error => {
@@ -31,7 +31,7 @@ function getNomeDoUsuario(email) {
     })
         .then(response => response.json())
         .then(data => {
-            const loggedUser = data.find(user => user.email === email)
+            const loggedUser = data.data.find(user => user.email === email)
             console.log(loggedUser);
             localStorage.setItem('nomeUsuario', `${loggedUser.nome} ${loggedUser.sobrenome}`);
         })

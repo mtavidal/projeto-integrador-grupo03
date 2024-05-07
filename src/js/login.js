@@ -22,7 +22,7 @@ function realizarLogin() {
         return;
       }
       console.log('Login realizado com sucesso!', data);
-      localStorage.setItem('token', data.message);
+      localStorage.setItem('token', data.data);
       localStorage.setItem('untilDate', new Date().setMinutes(new Date().getMinutes() + 10));
       getIdDoUsuario(email);
       getNomeDoUsuario(email);
