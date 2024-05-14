@@ -9,19 +9,23 @@
 
     <div id="containerDetalheGrupo">
         <div id="containerDadosGrupo">
-            <!-- <div>
-                    <h3>Nome do Produto</h3>
-                    <h3 id="descricaoProduto">Descrição do produto</h3>
-                    <h3>Status: Emprestado</h3>
-                    <h3>Produto com: Nome da Pessoa</h3>
-                    <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
-                        Participar</button>
+            <div>
+                <h3>Nome do Produto</h3>
+                <h3 id="descricaoProduto">Descrição do produto</h3>
+                <div id="checkboxDetalheContainer">
+                    <input type="checkbox" id="habilitarVendaDetalhe" checked="checked">
+                    <label for="habilitarVendaDetalhe" id="habilitarVendaDetalheLabel">Habilitar Venda</label>
                 </div>
-                <img src="./public/assets/images/foto_produto.png" alt=""> -->
+                <h3>Status: Emprestado</h3>
+                <h3>Produto com: Nome da Pessoa</h3>
+                <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
+                    Participar</button>
+            </div>
+            <img src="./public/assets/images/foto_produto.png" alt="">
         </div>
     </div>
     <div id="containerParticipantes">
-        <!-- <h2>Participantes</h2>
+        <h2>Participantes</h2>
         <div id="containerCardsParticipantes">
             <div class="cardParticipantes">
                 <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
@@ -35,8 +39,11 @@
                 <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
                 <h2 style="color:#8ecddd;">Nome</h2>
             </div>
-        </div> -->
-        <!-- <button type=" button" class="btnAzulClaro" onclick="{navigateTo('pegar-emprestado'),getGrupoPegarEmprestado() }">Pegar Emprestado</button> -->
+        </div>
+        <div id="containerBotoes">
+            <button type=" button" class="btnAzulClaro" onclick="{navigateTo('pegar-emprestado'),getGrupoPegarEmprestado() }">Pegar Emprestado</button>
+            <button type=" button" class="btnAzulClaro" onclick="{openModal('dv-modal7')}">Solicitar Compra</button>
+        </div>
     </div>
 </main>
 <!-- /modal -->
@@ -48,6 +55,18 @@
 
         <div class="modal-footer">
             <button class="btn" onclick="{closeModal('dv-modal')}">Fechar</button>
+        </div>
+    </div>
+</div>
+<div id="dv-modal7" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>Sua solicitação de compra foi realizada com sucesso! 
+                Aguarde contato do dono do objeto.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn" onclick="{closeModal('dv-modal7'), navigateTo('painel-usuario')}">Fechar</button>
         </div>
     </div>
 </div>

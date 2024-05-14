@@ -43,6 +43,25 @@ main {
   height: 200px;
 }
 
+#checkboxDetalheContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#habilitarVendaDetalhe {
+  width: 24px;
+  height: 24px;
+}
+
+#habilitarVendaDetalheLabel {
+  color: #22668d;
+  font-weight: bold;
+  padding: 0px;
+}
+
 .btnAzulClaro {
   border: none;
   background-color: #8ecddd;
@@ -95,3 +114,4 @@ main {
   width: 150px;
   padding: 10px;
 }
+
