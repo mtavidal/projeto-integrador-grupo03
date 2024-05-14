@@ -1,11 +1,10 @@
-# Projeto integrador 2303 | Grupo 03
+# Projeto integrador 2401 | Grupo 04
 
 ---
 
 ## <img src="./public/assets/images/favicon.ico" width="40" /> Empresta.aí
 
-O objetivo do presente trabalho foi realizar uma proposta (1ªEntrega) e um protótipo
-funcional (2ªEntrega) de uma aplicação web, voltada para a gestão de empréstimo de objetos entre grupos de pessoas, o Empresta.aí.
+propomos uma evolução do projeto Empresta.aí, realizado pela mesma equipe no semestre de 2023.2, que foi pensado, até então, para que pessoas compartilhassem objetos entre elas. Isso é relevante principalmente em locais de renda mais baixa, facilitando a troca de produtos sem que haja pagamento envolvido. Visando evoluir o projeto para que atinja novos públicos, o Empresta.aí contará com a nova funcionalidade de compra e venda de produtos. O foco, além de empréstimo, agora também é na venda de produtos usados. O diferencial em relação a outros concorrentes no mercado é que o produto pode ser inicialmente emprestado e, caso haja interesse do usuário, pode ser efetivada a compra dele. Baseado nessa evolução, nesse trabalho foi detalhado a visão do novo produto, enfatizando as novas funcionalidades com relação à versão anterior; identificamos as partes interessadas e as relações de forças entre elas; enumeramos três personas e suas jornadas; realizamos um protótipo, com as telas e o fluxo entre elas e por fim, desenvolvemos o mínimo produto viável. Este trabalho ressalta a importância da definição da visão de produto, das personas, das jornadas do usuário e do protótipo funcional. Esses elementos são fundamentais para o desenvolvimento de um produto bem-sucedido, atendendo às necessidades do mercado e dos usuários.
 
 ---
 
