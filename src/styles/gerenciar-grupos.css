@@ -70,6 +70,29 @@ input[type='file']::-webkit-file-upload-button:hover {
   background-color: #22668d;
   cursor: pointer;
 }
+
+#containerFooter {
+  justify-content: space-between;
+}
+
+#checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#habilitarVenda {
+  width: 24px;
+  height: 24px;
+}
+
+#habilitarLabel {
+  color: #8ecddd;
+  padding: 0px;
+}
+
 .btnAzulClaro {
   border: none;
   background-color: #8ecddd;
@@ -132,6 +155,73 @@ input[type='file']::-webkit-file-upload-button:hover {
 .cardMeusGrupos h4 {
   text-align: center;
 }
+
+#containerEditarGrupo {
+  display: flex;
+  flex-direction: column;
+  color: #8ecddd;
+}
+
+#containerEditarGrupo h2 {
+  margin-top: 10px;
+  color: #22668d;
+}
+
+#formEditarGrupo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: space-between;
+  align-items: normal;
+  flex-wrap: wrap;
+}
+
+#formEditarGrupo div {
+  display: flex;
+}
+
+#editarNomeGrupo,
+#editarEmailsConvidados,
+#editarNomeProduto {
+  width: 49%;
+  margin: 3px;
+  padding: 5px;
+  background-color: #8ecddd;
+  border: solid 2px #22668d;
+}
+#formEditarGrupo textarea {
+  width: 98.7%;
+  margin: 3px;
+  padding: 5px;
+  background-color: #8ecddd;
+  border: solid 2px #22668d;
+}
+
+#editarImagemProduto {
+  width: 49%;
+  margin: 3px;
+  background-color: #8ecddd;
+  border: solid 2px #22668d;
+}
+
+#checkboxEditarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+#editarHabilitarVenda {
+  width: 24px;
+  height: 24px;
+}
+
+#editarHabilitarLabel{
+  color: #22668d;
+  padding: 0px;
+}
+
 @media only screen and (max-width: 915px) {
   #formCriarGrupo div {
     flex-direction: column;
