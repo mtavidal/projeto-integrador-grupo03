@@ -752,11 +752,11 @@ input[type='file']::-webkit-file-upload-button:hover {
   height: 24px;
 }
 
-#editarHabilitarLabel{
+#editarHabilitarLabel {
   color: #22668d;
   padding: 0px;
 }
- 
+
 @media only screen and (max-width: 915px) {
   #formCriarGrupo div {
     flex-direction: column;
@@ -836,6 +836,10 @@ main {
   background-color: #22668d;
   color: #8ecddd;
   padding: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 15px;
 }
 .cardGrupos:hover {

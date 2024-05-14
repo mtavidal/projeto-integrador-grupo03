@@ -4,7 +4,7 @@
 
 ## <img src="./public/assets/images/favicon.ico" width="40" /> Empresta.aí
 
-propomos uma evolução do projeto Empresta.aí, realizado pela mesma equipe no semestre de 2023.2, que foi pensado, até então, para que pessoas compartilhassem objetos entre elas. Isso é relevante principalmente em locais de renda mais baixa, facilitando a troca de produtos sem que haja pagamento envolvido. Visando evoluir o projeto para que atinja novos públicos, o Empresta.aí contará com a nova funcionalidade de compra e venda de produtos. O foco, além de empréstimo, agora também é na venda de produtos usados. O diferencial em relação a outros concorrentes no mercado é que o produto pode ser inicialmente emprestado e, caso haja interesse do usuário, pode ser efetivada a compra dele. Baseado nessa evolução, nesse trabalho foi detalhado a visão do novo produto, enfatizando as novas funcionalidades com relação à versão anterior; identificamos as partes interessadas e as relações de forças entre elas; enumeramos três personas e suas jornadas; realizamos um protótipo, com as telas e o fluxo entre elas e por fim, desenvolvemos o mínimo produto viável. Este trabalho ressalta a importância da definição da visão de produto, das personas, das jornadas do usuário e do protótipo funcional. Esses elementos são fundamentais para o desenvolvimento de um produto bem-sucedido, atendendo às necessidades do mercado e dos usuários.
+Propomos uma evolução do projeto Empresta.aí, realizado pela mesma equipe no semestre de 2023.2, que foi pensado, até então, para que pessoas compartilhassem objetos entre elas. Visando evoluir o projeto para que atinja novos públicos, o Empresta.aí contará com a nova funcionalidade de compra e venda de produtos. O foco, além de empréstimo, agora também é na venda de produtos usados. O diferencial em relação a outros concorrentes no mercado é que o produto pode ser inicialmente emprestado e, caso haja interesse do usuário, pode ser efetivada a compra dele. Baseado nessa evolução, nesse trabalho foi detalhado a visão do novo produto, enfatizando as novas funcionalidades com relação à versão anterior; identificamos as partes interessadas e as relações de forças entre elas; enumeramos três personas e suas jornadas; realizamos um protótipo, com as telas e o fluxo entre elas e por fim, desenvolvemos o mínimo produto viável. Este trabalho ressalta a importância da definição da visão de produto, das personas, das jornadas do usuário e do protótipo funcional. Esses elementos são fundamentais para o desenvolvimento de um produto bem-sucedido, atendendo às necessidades do mercado e dos usuários.
 
 ---
 
@@ -12,7 +12,7 @@ propomos uma evolução do projeto Empresta.aí, realizado pela mesma equipe no 
 
 Após revisitar o projeto apresentado na primeira etapa, definimos a jornada de "pegar um produto emprestado" para ser desenvolvida, como ilustrado no vídeo abaixo.
 
-->[Acessar vídeo Empresta.Aí](https://youtu.be/RFCeJtx27cg?si=joH2STA5gMSeb95g/)
+->[Acessar vídeo Empresta.Aí]()
 
 ---
 
@@ -20,7 +20,7 @@ Após revisitar o projeto apresentado na primeira etapa, definimos a jornada de 
 
 Pdf com o conteúdo da primeira entrega do projeto integrador.
 
-->[Acessar PDF](./public/documents/PI_ADS_Primeira%20_entrega_grupo03.pdf)
+->[Acessar PDF](./public/documents/)
 
 ---
 
@@ -28,9 +28,9 @@ Pdf com o conteúdo da primeira entrega do projeto integrador.
 
 Usamos o Figma para realizar um esboço das interfaces do projeto.
 
--> [Acessar o figma do projeto](https://www.figma.com/file/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?type=design&node-id=0-1&mode=design&t=G3K0Jml18Zq3x8F6-0)
+-> [Acessar o figma do projeto](https://www.figma.com/design/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?node-id=0-1&t=PtcTbte7ckbbn7Bb-0)
 
--> [Acessar o o fluxo (flow) no figma do projeto](https://www.figma.com/proto/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?node-id=27-135&starting-point-node-id=27%3A135)
+-> [Acessar o o fluxo (flow) no figma do projeto](https://www.figma.com/proto/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?node-id=459-257&t=HgJAm7oImfQO4dUK-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=459%3A257&show-proto-sidebar=1)
 
 Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
@@ -76,12 +76,14 @@ Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
   - Express JS
   - JWT
   - Nodemon
+- Banco de Dados
+  - MySQL
 
 ---
 
 ## ✒️ Autores
 
-### Grupo 03
+### Grupo 04
 
 - [Manuela Torres Andion Vidal](https://github.com/mtavidal)
 - [Luís Otávio Mataveli](https://github.com/luismataveli)

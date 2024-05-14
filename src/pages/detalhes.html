@@ -10,38 +10,40 @@
     <div id="containerDetalheGrupo">
         <div id="containerDadosGrupo">
             <div>
-                <h3>Nome do Produto</h3>
-                <h3 id="descricaoProduto">Descrição do produto</h3>
+                <h3>Bóia de Piscina</h3>
+                <h3 id="descricaoProduto">Descrição do produto: bóia inflável, da marca melissa, medindo 120cm X 140cm X
+                    90cm. Ideal para piscina ou mar de águas calmas.</h3>
                 <div id="checkboxDetalheContainer">
-                    <input type="checkbox" id="habilitarVendaDetalhe" checked="checked">
-                    <label for="habilitarVendaDetalhe" id="habilitarVendaDetalheLabel">Habilitar Venda</label>
+                    <input type="checkbox" id="habilitarVendaDetalhe" checked="checked" disabled>
+                    <label for="habilitarVendaDetalhe" id="habilitarVendaDetalheLabel">Venda habilitada</label>
                 </div>
-                <h3>Status: Emprestado</h3>
-                <h3>Produto com: Nome da Pessoa</h3>
+                <h3>Status: Disponível</h3>
+                <h3>Produto com: Disponível</h3>
                 <button type="button" class="btnAzulClaro" onclick="{openModal('dv-modal')}">Deixar de
                     Participar</button>
             </div>
-            <img src="./public/assets/images/foto_produto.png" alt="">
+            <img src="./public/assets/images/produto04.jpg" alt="foto do produto">
         </div>
     </div>
     <div id="containerParticipantes">
         <h2>Participantes</h2>
         <div id="containerCardsParticipantes">
             <div class="cardParticipantes">
-                <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
-                <h2 style="color:#8ecddd;">Nome</h2>
+                <img src="./public/assets/images/participante01.jpg" alt="Foto participante">
+                <h2 style="color:#8ecddd;">Bianca Bittencourt</h2>
             </div>
             <div class="cardParticipantes">
-                <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
-                <h2 style="color:#8ecddd;">Nome</h2>
+                <img src="./public/assets/images/participante02.jpg" alt="Foto participante">
+                <h2 style="color:#8ecddd;">Antonio Oliveira</h2>
             </div>
             <div class=" cardParticipantes">
-                <img src="./public/assets/images/foto_participante.png" alt="Foto participante">
-                <h2 style="color:#8ecddd;">Nome</h2>
+                <img src="./public/assets/images/participante03.jpg" alt="Foto participante">
+                <h2 style="color:#8ecddd;">Maria Eduarda Martins</h2>
             </div>
         </div>
         <div id="containerBotoes">
-            <button type=" button" class="btnAzulClaro" onclick="{navigateTo('pegar-emprestado'),getGrupoPegarEmprestado() }">Pegar Emprestado</button>
+            <button type=" button" class="btnAzulClaro"
+                onclick="{navigateTo('pegar-emprestado'),getGrupoPegarEmprestado() }">Pegar Emprestado</button>
             <button type=" button" class="btnAzulClaro" onclick="{openModal('dv-modal7')}">Solicitar Compra</button>
         </div>
     </div>
@@ -61,7 +63,7 @@
 <div id="dv-modal7" class="modal">
     <div class="modal-content">
         <div class="modal-body">
-            <p>Sua solicitação de compra foi realizada com sucesso! 
+            <p>Sua solicitação de compra foi realizada com sucesso!
                 Aguarde contato do dono do objeto.</p>
         </div>
 
