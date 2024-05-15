@@ -130,8 +130,8 @@ input[type='file']::-webkit-file-upload-button:hover {
   color: #8ecddd;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
   width: 250px;
   align-items: center;
   justify-content: space-between;
@@ -217,7 +217,7 @@ input[type='file']::-webkit-file-upload-button:hover {
   height: 24px;
 }
 
-#editarHabilitarLabel{
+#editarHabilitarLabel {
   color: #22668d;
   padding: 0px;
 }
