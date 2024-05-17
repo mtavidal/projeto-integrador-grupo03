@@ -10,17 +10,17 @@ Propomos uma evolução do projeto Empresta.aí, realizado pela mesma equipe no 
 
 ## 🔗 Link para o vídeo no YouTube
 
-Após revisitar o projeto apresentado na primeira etapa, definimos a jornada de "pegar um produto emprestado" para ser desenvolvida, como ilustrado no vídeo abaixo.
+O funcionamento da aplicação web, bem como a interface e a jornada do usuário podem ser visualizados no vídeo de demonstração, disponível no link abaixo.
 
-->[Acessar vídeo Empresta.Aí]()
+->[Acessar vídeo Empresta.Aí](https://www.youtube.com/watch?v=NsWBwf0b0j8)
 
 ---
 
-## 📄 Documento Primeira Entrega
+## 📄 Documento Segunda Entrega
 
-Pdf com o conteúdo da primeira entrega do projeto integrador.
+Pdf com o conteúdo da segunda entrega do projeto integrador 2401.
 
-->[Acessar PDF](./public/documents/)
+->[Acessar PDF](./public/documents/PI_Segunda_Entrega_Grupo_04.pdf)
 
 ---
 
@@ -28,9 +28,9 @@ Pdf com o conteúdo da primeira entrega do projeto integrador.
 
 Usamos o Figma para realizar um esboço das interfaces do projeto.
 
--> [Acessar o figma do projeto](https://www.figma.com/design/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?node-id=0-1&t=PtcTbte7ckbbn7Bb-0)
+-> [Acessar o figma do projeto](https://www.figma.com/file/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?type=design&node-id=0-1&mode=design&t=NcSqYPGrS8bwGnJc-0.)
 
--> [Acessar o o fluxo (flow) no figma do projeto](https://www.figma.com/proto/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?node-id=459-257&t=HgJAm7oImfQO4dUK-0&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=459%3A257&show-proto-sidebar=1)
+-> [Acessar o o fluxo (flow) no figma do projeto](https://www.figma.com/proto/faRTEZOXgpwiGXoo8F20Sf/Projeto-Integrador---Empresta.a%C3%AD?type=design&node-id=459-257&t=NcSqYPGrS8bwGnJc-0&scaling=contain&page-id=0%3A1&starting-point-node-id=459%3A257)
 
 Para escolher a paleta de cores do projeto, utilizamos o Color Hunt.
 
